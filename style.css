@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.button-class{
+    text-align: center;
+    margin-top: 20px;
+}
+.button-design{
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #3498db;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.button-design::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: red;
+    z-index: -1;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+.button-design:hover::before{
+    width: 100%;
+}
+
